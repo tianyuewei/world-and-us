@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Schedule</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://use.typekit.net/bss8rgs.css">
+    <style>
+        .container {
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: 100px 200px 600px 600px 550px 120px;
+        }
+
+        .base-circle-1 {
+            background-image: url(image/schedule-circle_01.png);
+            grid-column: 1/5;
+            grid-row: 3/4;
+            z-index: 1;
+        }
+
+        .base-circle-2 {
+            background-image: url(image/schedule-circle_02.png);
+            grid-column: 6/8;
+            grid-row: 4/5;
+            z-index: 1;
+        }
+
+        .base-circle-3 {
+            background-image: url(image/schedule-circle_03.png);
+            grid-column: 8/13;
+            grid-row: 4/5;
+            z-index: 1;
+        }
+
+        .base-circle-4 {
+            background-image: url(image/schedule-circle_04.png);
+            grid-column: 6/8;
+            grid-row: 5/6;
+            z-index: 1;
+        }
+
+        .base-circle-5 {
+            background-image: url(image/schedule-circle_05.png);
+            grid-column: 1/5;
+            grid-row: 5/6;
+            z-index: 1;
+        }
+
+        .photo1 {
+            background-image: url(image/schedule-photo_01.png);
+            grid-column: 2/6;
+            grid-row: 3/4;
+            z-index: 2;
+        }
+
+        .photo2 {
+            background-image: url(image/schedule-photo_02.png);
+            grid-column: 8/12;
+            grid-row: 4/5;
+            z-index: 2;
+        }
+
+        .photo3 {
+            background-image: url(image/schedule-photo_03.png);
+            grid-column: 2/6;
+            grid-row: 5/6;
+            z-index: 2;
+        }
+
+        .dash-line {
+            background-image: url(image/schedule-line_03.png);
+            grid-column: 2/12;
+            grid-row: 3/6;
+            z-index: 0;
+        }
+
+        h2 {
+            position: absolute;
+            font-family: futura-pt, sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 30pt;
+        }
+
+        .event-1 {
+            grid-column: 2/7;
+            grid-row: 3/4;
+            top: 160px;
+            left: 45px;
+            /*            color: #57B3C2;*/
+            z-index: 3;
+        }
+
+        .event-2 {
+            grid-column: 8/12;
+            grid-row: 4/5;
+            top: 140px;
+            /*            color: #EFC348;*/
+            z-index: 3;
+        }
+
+        .event-3 {
+            grid-column: 3/7;
+            grid-row: 5/6;
+            top: 110px;
+            left: -50px;
+            /*            color: #57B3C2;*/
+            z-index: 3;
+        }
+
+        h3 {
+            position: absolute;
+            font-family: futura-pt, sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 25pt;
+        }
+
+        .event-4 {
+            grid-column: 3/7;
+            grid-row: 4/5;
+            top: 70px;
+            left: 70px;
+            z-index: 3;
+        }
+
+        .event-5 {
+            grid-column: 7/11;
+            grid-row: 5/6;
+            top: 30px;
+            left: 50px;
+        }
+
+
+        p {
+            position: absolute;
+            font-family: mr-eaves-modern, sans-serif;
+
+            font-weight: 300;
+            font-size: 18pt;
+            text-align: justify;
+            line-height: 1.4;
+        }
+
+        .p1 {
+            grid-column: 5/11;
+            grid-row: 3/4;
+            width: 650px;
+            top: 360px;
+            left: 50px;
+            z-index: 3;
+        }
+
+        .p2 {
+            grid-column: 3/10;
+            grid-row: 4/5;
+            width: 640px;
+
+            top: 300px;
+            left: -110px;
+            z-index: 3;
+        }
+
+        .p3 {
+            grid-column: 5/11;
+            grid-row: 5/6;
+            width: 650px;
+            top: 270px;
+            left: 60px;
+            letter-spacing: -0.1px;
+            z-index: 3;
+        }
+
+        .bottom {
+            grid-row: 6/7;
+        }
+
+        .background {
+            animation: map linear infinite;
+            opacity: 0.5;
+            width: 1200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="background"></div>
+        <div class="header">
+
+            <a class="about" href="about.html">About</a>
+            <a class="speakers" href="speakers.html">Speakers</a>
+            <a class="schedule" href="schedule.html">Schedule</a>
+            <a class="stream" href="live.html">Live Stream</a>
+            <a class="world" href="index.html">The World and Us</a>
+        </div>
+        <div class="header-background"> </div>
+        <div class="header-lg">Schedule</div>
+        <div class="base-circle-1"></div>
+        <div class="base-circle-2"></div>
+        <div class="base-circle-3"></div>
+        <div class="base-circle-4"></div>
+        <div class="base-circle-5"></div>
+        <div class="photo1"></div>
+        <div class="photo2"></div>
+        <div class="photo3"></div>
+
+        <div class="dash-line"></div>
+        <div class="event-1">
+            <h2>11:00 Rob Giampietro</h2>
+        </div>
+        <div class="event-2">
+            <h2>Brockett Horne 13:30</h2>
+        </div>
+        <div class="event-3">
+            <h2>15:30 Pascal Zoghbi</h2>
+        </div>
+
+        <div class="event-4">
+            <h3>Lunch break 12:00</h3>
+        </div>
+        <div class="event-5">
+            <h3>14:00 Online workshop</h3>
+        </div>
+
+        <div class="p1">
+            <p>Rob will share his experience about design and different culture. He wants to encourage people to explore the world around us and learn how to respect different culture. </p>
+        </div>
+        <div class="p2">
+            <p>
+                Brockett will share her experiences as an art educator at MICA when communicates with her students from different countries. She wants us to understand the difficulties that young designers might face in the future .
+            </p>
+        </div>
+        <div class="p3">
+            <p>
+                Pascal will talk about the challenge he and his team faced when creating a new font for Arabic characters. He wants to point out the importance to understand the culture and demand of a specific group of people.
+            </p>
+        </div>
+        <div class="bottom">
+            <div class="divider"></div>
+            <a class="icon-1" href="https://www.mica.edu/">
+                <img src="image/icon/bottom-icon-1.png" alt="">
+            </a>
+            <a class="icon-2" href="https://www.moma.org">
+                <img src="image/icon/bottom-icon-2.png" alt="">
+            </a>
+            <a class="icon-3" href="https://www.google.com">
+                <img src="image/icon/bottom-icon-3.png" alt="">
+            </a>
+            <a class="icon-4" href="https://www.wechat.com/en/">
+                <img src="image/icon/bottom-icon-4.png" alt="">
+            </a>
+            <a class="icon-5" href="https://www.facebook.com">
+                <img src="image/icon/bottom-icon-5.png" alt="">
+            </a>
+            <a class="icon-6" href="https://twitter.com/home">
+                <img src="image/icon/bottom-icon-6.png" alt="">
+            </a>
+            <a class="icon-7" href="https://www.instagram.com">
+                <img src="image/icon/bottom-icon-7.png" alt="">
+            </a>
+        </div>
+</body></html>

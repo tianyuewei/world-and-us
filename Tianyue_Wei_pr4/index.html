@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>The World and Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://use.typekit.net/bss8rgs.css">
+    <style>
+        .container {
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: 240px 240px 300px;
+        }
+
+        .title {
+            font-family: futura-pt, sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 80pt;
+            grid-column: 3/12;
+            grid-row: 2/3;
+            top: 30px;
+        }
+
+        .subtitle {
+            font-family: futura-pt, sans-serif;
+            font-weight: 200;
+            font-size: 20pt;
+            text-align: center;
+            line-height: 1.3;
+            grid-column: 5/9;
+            grid-row: 2/3;
+            left: 20px;
+            top: 150px;
+        }
+
+        .navigation {
+            position: absolute;
+            font-family: futura-pt, sans-serif;
+            font-weight: 500;
+            font-size: 25pt;
+            font-style: normal;
+            grid-row: 3/4;
+            display: grid;
+            width: 1200px;
+            margin: 0 auto;
+            grid-template-columns: repeat(12, 1fr);
+            top: 30px;
+        }
+
+
+
+
+        /*        About*/
+        .nav1 {
+            display: inline-block;
+            position: relative;
+            grid-column: 3/4;
+        }
+
+
+        .nav1::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 5px;
+            bottom: -5px;
+            left: 0px;
+            background-color: #57B3C2;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        a.about-lg:hover {
+            color: #57B3C2;
+        }
+
+        .nav1:hover::before {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        /*        #EFC348*/
+        /*        speakers*/
+        .nav2 {
+            display: inline-block;
+            position: relative;
+            grid-column: 6/7;
+            left: -30px;
+        }
+
+        .nav2::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 5px;
+            bottom: -5px;
+            left: 0px;
+            background-color: #EFC348;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        .nav2:hover::before {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        a.speakers-lg:hover {
+            color: #EFC348;
+        }
+
+        /*        schedule*/
+        .nav3 {
+            display: inline-block;
+            position: relative;
+            grid-column: 8/9;
+            left: 15px;
+        }
+
+        .nav3::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 5px;
+            bottom: -5px;
+            left: 0px;
+            background-color: #57B3C2;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        .nav3:hover::before {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        a.schedule-lg:hover {
+            color: #57B3C2;
+        }
+
+        /*        live*/
+        .nav4 {
+            display: inline-block;
+            position: relative;
+            grid-column: 10/13;
+            left: 50px;
+            width: 57px;
+        }
+
+        .nav4::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 5px;
+            bottom: -5px;
+            left: 0px;
+            background-color: #EFC348;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        .nav4:hover::before {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        a.live-lg:hover {
+            color: #EFC348;
+        }
+
+        /*
+        
+        https://www.youtube.com/watch?v=5PzWwyVB2-c
+*/
+        .icons {
+            position: absolute;
+            grid-row: 3/4;
+            margin-top: 220px;
+        }
+
+        .mica {
+            grid-column: 5/7;
+            left: -20px
+        }
+
+        .mica:hover {
+            opacity: 0.7;
+        }
+
+        .moma {
+            grid-column: 7/7;
+            top: 6px;
+            left: -20px
+        }
+
+        .moma:hover {
+            opacity: 0.7;
+        }
+
+        .google {
+            grid-column: 8/9;
+            left: 20px;
+        }
+
+        .google:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="title">
+            <h1>The World and Us</h1>
+        </div>
+        <div class="subtitle">
+
+            Graphic design remote event<br>
+            June 6th, 2020
+
+        </div>
+
+        <div class="navigation">
+            <div class="nav1">
+                <a class="about-lg" href="about.html">About</a>
+            </div>
+            <div class="nav2">
+                <a class="speakers-lg" href="speakers.html">Speakers</a>
+            </div>
+            <div class="nav3">
+                <a class="schedule-lg" href="schedule.html">Schedule</a>
+            </div>
+            <div class="nav4">
+                <a class="live-lg" href="live.html">Live</a>
+            </div>
+        </div>
+
+
+
+        <!--        bottom-->
+        <a class="icons mica" href="https://www.mica.edu/">
+            <img src="image/icon/bottom-icon-1.png" alt="">
+        </a>
+        <a class="icons moma" href="https://www.moma.org">
+            <img src="image/icon/bottom-icon-2.png" alt="">
+        </a>
+        <a class="icons google" href="https://www.google.com">
+            <img src="image/icon/bottom-icon-3.png" alt="">
+        </a>
+
+
+    </div>
+</body></html>

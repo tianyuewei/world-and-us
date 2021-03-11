@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Speakers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://use.typekit.net/bss8rgs.css">
+    <style>
+        .container {
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: 100px 200px 300px 400px 250px 450px 200px 470px 120px;
+        }
+
+
+        .speaker-1 {
+            background-image: url(image/speakers-photo_01.png);
+            grid-column: 7/13;
+            grid-row: 3/5;
+            z-index: 1;
+        }
+
+        .speaker-2 {
+            background-image: url(image/speakers-photo_02.png);
+            grid-column: 1/7;
+            grid-row: 5/7;
+            z-index: 1;
+        }
+
+        .speaker-3 {
+            background-image: url(image/speakers-photo_03.png);
+            grid-column: 7/13;
+            grid-row: 7/9;
+            z-index: 1;
+        }
+
+        .shape-1 {
+            background-image: url(image/speakers-shape_01.png);
+            grid-column: 5/11;
+            grid-row: 3/5;
+            left: 20px;
+        }
+
+        .shape-2 {
+            background-image: url(image/speakers-shape_02.png);
+            grid-column: 2/9;
+            grid-row: 5/7;
+        }
+
+        .shape-3 {
+            background-image: url(image/speakers-shape_03.png);
+            grid-column: 5/12;
+            grid-row: 7/9;
+            left: -10px;
+        }
+
+        h2 {
+            font-family: mr-eaves-modern, sans-serif;
+            font-weight: 400;
+            font-size: 50pt;
+        }
+
+        .name-1 {
+            position: absolute;
+            grid-column: 4/9;
+            grid-row: 3/4;
+            top: 180px;
+            left: 30px;
+            color: #57B3C2;
+        }
+
+        .name-2 {
+            position: absolute;
+            grid-column: 5/10;
+            grid-row: 5/6;
+            top: 140px;
+            left: 60px;
+            color: #EFC348;
+        }
+
+        .name-3 {
+            position: absolute;
+            grid-column: 5/9;
+            grid-row: 7/8;
+            color: #57B3C2;
+            top: 110px;
+            left: 20px;
+        }
+
+        p {
+            font-family: mr-eaves-modern, sans-serif;
+            font-weight: 300;
+            font-size: 18pt;
+            text-align: justify;
+            line-height: 1.2;
+        }
+
+        .p1 {
+            position: absolute;
+            grid-column: 1/8;
+            grid-row: 4/5;
+            width: 570px;
+            top: 20px;
+            left: 50px;
+        }
+
+        .p2 {
+            position: absolute;
+            width: 570px;
+            grid-column: 6/13;
+            grid-row: 6/7;
+            top: 35px;
+            right: 60px;
+        }
+
+        .p3 {
+            position: absolute;
+            width: 570px;
+            grid-column: 1/8;
+            grid-row: 8/9;
+            left: 50px;
+            top: 40px;
+            letter-spacing: -0.2px;
+        }
+
+        .bottom {
+            grid-row: 9/10;
+        }
+
+        .background {
+            animation: map linear infinite;
+            opacity: 0.5;
+            width: 1200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="background"></div>
+        <div class="header">
+            <a class="about" href="about.html">About</a>
+            <a class="speakers" href="speakers.html">Speakers</a>
+            <a class="schedule" href="schedule.html">Schedule</a>
+            <a class="stream" href="live.html">Live Stream</a>
+            <a class="world" href="index.html">The World and Us<br>
+                <!--                <div class="title-s">Graphic design remote event</div>-->
+            </a>
+        </div>
+        <div class="header-background"></div>
+        <div class="header-lg">Speakers</div>
+        <div class="speaker-1"></div>
+        <div class="speaker-2"></div>
+        <div class="speaker-3"></div>
+        <div class="shape-1"></div>
+        <div class="shape-2"></div>
+        <div class="shape-3"></div>
+
+        <!--        people      -->
+        <div class="name-1">
+            <h2>Rob Giampietro</h2>
+        </div>
+        <div class="name-2">
+            <h2>Brockett Horne</h2>
+        </div>
+        <div class="name-3">
+            <h2>Pascal Zoghbi</h2>
+        </div>
+
+        <div class="p1">
+            <p>
+                Rob Giampietro is Director of Design at the Museum of Modern Art in New York, leading a team of 20+ of designers and producers at the museum on projects across all media. When he worked at MoMa, he tried to extend MoMA’s identity as a dynamic and progressive cultural institution physically rooted in New York City, with a global reach and impact on modern and contemporary art and design.
+            </p>
+        </div>
+        <div class="p2">
+            <p>
+                She serves as chair of graphic design at MICA, where she teaches fierce sophomores and daring juniors. She has been exhibited and honored with multiple design awards, is a past Rotary International Scholar, and has work in the permanent collection of the RISD Museum of Art. By teaching students from different cultural background, Brockett understood the challenge of young graphic designers are facing.
+            </p>
+        </div>
+        <div class="p3">
+            <p>
+                Pascal Zoghbi, Arabic Type Designer and Typographer, is the founder of 29letters, an Arabic Type Design and Typography firm in Beirut. He His design work ranges from creating new Arabic fonts, corporate identities and print publications. Since 2006, after his graduation from the Type &#38 Media course at The Royal Academy of Arts in The Netherlands with a Master of Design, Pascal was involved in an impressive collection of new Arabic type design projects.
+            </p>
+        </div>
+        <div class="bottom">
+            <div class="divider"></div>
+            <a class="icon-1" href="https://www.mica.edu/">
+                <img src="image/icon/bottom-icon-1.png" alt="">
+            </a>
+            <a class="icon-2" href="https://www.moma.org">
+                <img src="image/icon/bottom-icon-2.png" alt="">
+            </a>
+            <a class="icon-3" href="https://www.google.com">
+                <img src="image/icon/bottom-icon-3.png" alt="">
+            </a>
+            <a class="icon-4" href="https://www.wechat.com/en/">
+                <img src="image/icon/bottom-icon-4.png" alt="">
+            </a>
+            <a class="icon-5" href="https://www.facebook.com">
+                <img src="image/icon/bottom-icon-5.png" alt="">
+            </a>
+            <a class="icon-6" href="https://twitter.com/home">
+                <img src="image/icon/bottom-icon-6.png" alt="">
+            </a>
+            <a class="icon-7" href="https://www.instagram.com">
+                <img src="image/icon/bottom-icon-7.png" alt="">
+            </a>
+        </div>
+</body></html>
